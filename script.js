@@ -170,23 +170,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 })();
 
-// Contact form
-(function initForm() {
-    const form = document.getElementById('contact-form');
-    if (!form) return;
+// Discord Copy
+(function initContact() {
+    const discordBtn = document.getElementById('discord-copy');
+    if (!discordBtn) return;
 
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        const btn = form.querySelector('button[type="submit"]');
-        btn.innerHTML = '<span>sent</span>';
-        btn.style.opacity = '0.7';
-        btn.disabled = true;
-
-        setTimeout(() => {
-            btn.innerHTML = '<span>send</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>';
-            btn.style.opacity = '';
-            btn.disabled = false;
-            form.reset();
-        }, 2500);
+    discordBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText('functionmore').then(() => {
+            const badge = document.getElementById('discord-copied');
+            const text = document.getElementById('discord-text');
+            text.style.display = 'none';
+            badge.style.display = 'inline-block';
+            
+            setTimeout(() => {
+                text.style.display = 'inline-block';
+                badge.style.display = 'none';
+            }, 2000);
+        });
     });
 })();
