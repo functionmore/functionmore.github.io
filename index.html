@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionmore — Bedrock Addon Developer</title>
+    <meta name="description" content="Minecraft Bedrock Edition addon developer with 5+ years of experience. Published on the official Minecraft Marketplace with top studios.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Nav -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">function<span class="logo-accent">more</span></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="#hero" class="nav-link active">home</a>
+                <a href="#about" class="nav-link">about</a>
+                <a href="#skills" class="nav-link">stack</a>
+                <a href="#projects" class="nav-link">work</a>
+                <a href="#contact" class="nav-link">contact</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                open for marketplace projects
+            </div>
+            <h1 class="hero-title">
+                Building <span class="gradient-text">addons</span> for<br>
+                Minecraft Bedrock
+            </h1>
+            <p class="hero-subtitle">
+                <strong>5+ years</strong> developing published content for the 
+                <strong>Minecraft Marketplace</strong>. Partnered with Noxcrew, 
+                The Hive, Kubo Studios, and 10+ other creator teams.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="16">0</span>
+                    <span class="stat-label">shipped projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-suffix">yr</span>
+                    <span class="stat-label">experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="12">0</span>
+                    <span class="stat-label">studio collabs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="28">0</span><span class="stat-suffix">K+</span>
+                    <span class="stat-label">player ratings</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>view work</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>get in touch</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>scroll</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-header">
+                        <span class="section-tag">// about</span>
+                        <h2 class="section-title">Bedrock addon<br>developer</h2>
+                    </div>
+                    <p class="about-lead">
+                        Specialized in Minecraft Bedrock Edition — behavior packs, 
+                        resource packs, Script API, custom entities, world generation, 
+                        and everything in between.
+                    </p>
+                    <p>
+                        I've worked with some of the most recognized studios on the 
+                        Marketplace. My work runs on Windows, Xbox, PlayStation, Switch, 
+                        iOS, and Android — reaching hundreds of thousands of players.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">></div>
+                            <div>
+                                <strong>Multi-platform</strong>
+                                <p>All Bedrock platforms</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">*</div>
+                            <div>
+                                <strong>Top rated</strong>
+                                <p>4.7+ average star ratings</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">&</div>
+                            <div>
+                                <strong>Studio partner</strong>
+                                <p>12+ professional teams</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-orbit">
+                        <div class="section-header">
+                            <span class="section-tag">// languages</span>
+                        </div>
+                        <div class="orbit-ring orbit-ring-1">
+                            <div class="orbit-item" style="--i:0; --total:4">JSON</div>
+                            <div class="orbit-item" style="--i:1; --total:4">JavaScript</div>
+                            <div class="orbit-item" style="--i:2; --total:4">TypeScript</div>
+                            <div class="orbit-item" style="--i:3; --total:4">Molang</div>
+                        </div>
+                        <div class="section-header" style="margin-top: 20px;">
+                            <span class="section-tag">// tools</span>
+                        </div>
+                        <div class="orbit-ring orbit-ring-2">
+                            <div class="orbit-item" style="--i:0; --total:6">Regolith</div>
+                            <div class="orbit-item" style="--i:1; --total:6">Git</div>
+                            <div class="orbit-item" style="--i:2; --total:6">Blockbench</div>
+                            <div class="orbit-item" style="--i:3; --total:6">bridge.</div>
+                            <div class="orbit-item" style="--i:4; --total:6">VS Code</div>
+                            <div class="orbit-item" style="--i:5; --total:6">Dash</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">// stack</span>
+                <h2 class="section-title">What I work with</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">01</div>
+                    <h3>TypeScript / JavaScript</h3>
+                    <p>Script API for Bedrock — game mechanics, UI systems, server logic using <code>@minecraft/server</code>.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">02</div>
+                    <h3>Regolith</h3>
+                    <p>Add-on compiler and build pipeline. Custom filters for JSON templates, scripts, multi-platform deploys.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">03</div>
+                    <h3>Dash / bridge.</h3>
+                    <p>IDE tools for Bedrock development. Schema validation, auto-completion, Lightning Cache support.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">04</div>
+                    <h3>Git</h3>
+                    <p>Version control for team collaboration, branching strategies, complex multi-pack repositories.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">05</div>
+                    <h3>Blockbench</h3>
+                    <p>3D modeling and texturing for custom entities, blocks, items. Animations and render controllers.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">06</div>
+                    <h3>Behavior & Resource Packs</h3>
+                    <p>Entity definitions, loot tables, recipes, trading, spawn rules, biome gen, feature rules.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">07</div>
+                    <h3>Molang</h3>
+                    <p>Expression language for animations, render controllers, particles, dynamic entity behaviors.</p>
+                </div>
+                <div class="skill-card" data-tilt data-aos>
+                    <div class="skill-icon">08</div>
+                    <h3>World Generation</h3>
+                    <p>Custom biomes, feature placement, terrain generation, procedural content systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// work</span>
+                <h2 class="section-title">Marketplace projects</h2>
+                <p class="section-description">Published on the official Minecraft Marketplace.</p>
+            </div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">all</button>
+                <button class="filter-btn" data-filter="addon">add-ons</button>
+                <button class="filter-btn" data-filter="world">worlds</button>
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <article class="project-card featured" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/kubo-studios-morph-add-on-thumbnail-88c6ed2e7ad0ee5e-800.jpg" alt="MORPH Add-On" loading="lazy">
+                        <div class="card-badge featured-badge">flagship</div>
+                        <div class="card-rating"><span class="stars">★★★★★</span> 4.7 · 28K+</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Kubo Studios</div>
+                        <h3 class="card-title">MORPH Add-On</h3>
+                        <p class="card-desc">Morph into any mob with unique abilities. Includes Horror Mode. Compatible with other Add-Ons.</p>
+                        <div class="card-tags"><span class="tag">mobs</span><span class="tag">morphing</span><span class="tag">survival</span></div>
+                        <a href="https://www.bedrockexplorer.com/@kubo-studios/morph-add-on" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/57digital-dogs-add-on-thumbnail-984f9a426a4ff469-800.jpg" alt="Dogs Add-On" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> 4.7 · 1K+</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">57Digital</div>
+                        <h3 class="card-title">Dogs Add-On</h3>
+                        <p class="card-desc">16+ breeds, 80+ colors, 30+ costumes. Adopt, train, and adventure.</p>
+                        <div class="card-tags"><span class="tag">pets</span><span class="tag">creatures</span></div>
+                        <a href="https://www.bedrockexplorer.com/@57digital/dogs-add-on" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/kreatik-studios-biomes-you-go-add-on-official-thumbnail-e361331b5139c675-800.jpg" alt="Biomes You Go" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> 4.7</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Kreatik Studios</div>
+                        <h3 class="card-title">Biomes You Go (Official)</h3>
+                        <p class="card-desc">Official OBYG Java port. 1000+ new blocks, custom wood sets, procedural biome gen.</p>
+                        <div class="card-tags"><span class="tag">worldgen</span><span class="tag">1000+ blocks</span></div>
+                        <a href="https://www.bedrockexplorer.com/@kreatik-studios/biomes-you-go-add-on-official" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/team-vaeron-mini-soldiers-add-on-thumbnail-6a458d6f61ffe7f7-800.jpg" alt="Mini Soldiers" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> 4.8</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Team Vaeron</div>
+                        <h3 class="card-title">Mini Soldiers Add-On</h3>
+                        <p class="card-desc">Craftable mini soldiers in 16 colors. Weapons, armor, horses, cannons.</p>
+                        <div class="card-tags"><span class="tag">battle</span><span class="tag">crafting</span></div>
+                        <a href="https://www.bedrockexplorer.com/@team-vaeron/mini-soldiers-add-on" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/monster-egg-studios-combat-classes-thumbnail-c0041bef538512df-800.jpg" alt="Combat Classes" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> 5.0</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Monster Egg Studios</div>
+                        <h3 class="card-title">Combat Classes</h3>
+                        <p class="card-desc">Combat styles, legendary weapons, unique fighting mechanics per class.</p>
+                        <div class="card-tags"><span class="tag">combat</span><span class="tag">weapons</span></div>
+                        <a href="https://www.bedrockexplorer.com/@monster-egg-studios/combat-classes" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/noxcrew-owls-add-on-thumbnail-93a8d6d70bfd6e76-800.jpg" alt="Owls Add-On" loading="lazy">
+                        <div class="card-badge studio-badge">noxcrew</div>
+                        <div class="card-rating"><span class="stars">★★★★★</span> Noxcrew</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Noxcrew</div>
+                        <h3 class="card-title">Owls Add-On</h3>
+                        <p class="card-desc">9 owl breeds — battle pets, crafting assistants, or flying companions.</p>
+                        <div class="card-tags"><span class="tag">mobs</span><span class="tag">survival</span></div>
+                        <a href="https://www.bedrockexplorer.com/@noxcrew/owls-add-on" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/xp-games-cave-dweller-add-on-official-thumbnail-b95b2e1e9c1b5a3f-800.jpg" alt="Cave Dweller" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★</span> XP Games</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">XP Games</div>
+                        <h3 class="card-title">Cave Dweller (Official)</h3>
+                        <p class="card-desc">Horror addon. A creature stalks you in the dark depths underground.</p>
+                        <div class="card-tags"><span class="tag">horror</span><span class="tag">creatures</span></div>
+                        <a href="https://www.bedrockexplorer.com/@xp-games/cave-dweller-add-on-official" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/the-hive-soundscapes-add-on-thumbnail-c8f06fcaab15e3cd-800.jpg" alt="Soundscapes" loading="lazy">
+                        <div class="card-badge studio-badge">the hive</div>
+                        <div class="card-rating"><span class="stars">★★★★★</span> The Hive</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">The Hive</div>
+                        <h3 class="card-title">Soundscapes Add-On</h3>
+                        <p class="card-desc">Immersive ambient audio system for survival worlds.</p>
+                        <div class="card-tags"><span class="tag">audio</span><span class="tag">immersion</span></div>
+                        <a href="https://www.bedrockexplorer.com/@the-hive/soundscapes-add-on" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/oreville-studios-time-capsule-add-on-thumbnail-80e62a2d6253e4f5-800.jpg" alt="Time Capsule" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> Oreville</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Oreville Studios</div>
+                        <h3 class="card-title">Time Capsule Add-On</h3>
+                        <p class="card-desc">Store treasures with a timer up to 15 years. Based on the real Redmond capsule.</p>
+                        <div class="card-tags"><span class="tag">utility</span><span class="tag">unique</span></div>
+                        <a href="https://www.bedrockexplorer.com/@oreville-studios/time-capsule-add-on" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/syclone-studios-days-survived-counter-thumbnail-14a50f8c6e1b26d4-800.jpg" alt="Days Survived" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> Syclone</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Syclone Studios</div>
+                        <h3 class="card-title">Days Survived Counter</h3>
+                        <p class="card-desc">Track your survival journey with an in-game counter and HUD.</p>
+                        <div class="card-tags"><span class="tag">survival</span><span class="tag">ui</span></div>
+                        <a href="https://www.bedrockexplorer.com/@syclone-studios/days-survived-counter" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="world" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/delisoft-studios-ghost-hunter-thumbnail-e2f05f5b5a6e7de2-800.jpg" alt="Ghost Hunter" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> DeliSoft</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">DeliSoft Studios</div>
+                        <h3 class="card-title">Ghost Hunter</h3>
+                        <p class="card-desc">Haunted locations, spirit capture, spine-chilling adventures.</p>
+                        <div class="card-tags"><span class="tag">horror</span><span class="tag">adventure</span></div>
+                        <a href="https://www.bedrockexplorer.com/@delisoft-studios/ghost-hunter" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="world" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/lifeboat-drift-simulator-world-edition-thumbnail-12b76e8f42d0f9db-800.jpg" alt="Drift Simulator" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> Lifeboat</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Lifeboat</div>
+                        <h3 class="card-title">Drift Simulator World Edition</h3>
+                        <p class="card-desc">Custom vehicles, tracks, and physics for high-speed drifting.</p>
+                        <div class="card-tags"><span class="tag">vehicles</span><span class="tag">racing</span></div>
+                        <a href="https://www.bedrockexplorer.com/@lifeboat/drift-simulator-world-edition" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="world" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/diamond-studios-find-the-button-3-thumbnail-c1ab43e9a6e9f67e-800.jpg" alt="Find the Button 3" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> Diamond</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Diamond Studios</div>
+                        <h3 class="card-title">Find the Button 3</h3>
+                        <p class="card-desc">Hidden buttons across themed rooms. Puzzle and mini-game.</p>
+                        <div class="card-tags"><span class="tag">puzzle</span><span class="tag">minigame</span></div>
+                        <a href="https://www.bedrockexplorer.com/@diamond-studios/find-the-button-3" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image">
+                        <img src="https://images.bedrockexplorer.com/minecraft-marketplace-content/street-studios-mech-suits-thumbnail-21e7e6ac5cf7f2f8-800.jpg" alt="Mech Suits" loading="lazy">
+                        <div class="card-rating"><span class="stars">★★★★★</span> Street</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Street Studios</div>
+                        <h3 class="card-title">Mech Suits</h3>
+                        <p class="card-desc">Giant mech suits with weapons and abilities for combat domination.</p>
+                        <div class="card-tags"><span class="tag">mech</span><span class="tag">combat</span></div>
+                        <a href="https://www.bedrockexplorer.com/@street-studios/mech-suits" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image placeholder-img">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">{}</span>
+                            <span>marketplace project</span>
+                        </div>
+                        <div class="card-rating"><span class="stars">★★★★★</span> official</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Minecraft Marketplace</div>
+                        <h3 class="card-title">Marketplace Project</h3>
+                        <p class="card-desc">Published on the official Minecraft Marketplace store.</p>
+                        <div class="card-tags"><span class="tag">official</span><span class="tag">published</span></div>
+                        <a href="https://marketplace.minecraft.net/en-us/pdp?id=e7aa7f42-0dc1-4d85-910e-66c2a3903f85" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="addon" data-aos>
+                    <div class="card-image placeholder-img">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">{}</span>
+                            <span>marketplace project</span>
+                        </div>
+                        <div class="card-rating"><span class="stars">★★★★★</span> official</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-studio">Minecraft Marketplace</div>
+                        <h3 class="card-title">Marketplace Project</h3>
+                        <p class="card-desc">Published on the official Minecraft Marketplace store.</p>
+                        <div class="card-tags"><span class="tag">official</span><span class="tag">published</span></div>
+                        <a href="https://marketplace.minecraft.net/en-us/pdp?id=8680ec0f-9b1b-4027-9007-8d60a409a0fe" target="_blank" class="card-link">view on marketplace →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Studios -->
+    <section class="section studios">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">// collabs</span>
+                <h2 class="section-title">Studios I've worked with</h2>
+            </div>
+        </div>
+        <div class="studios-marquee">
+            <div class="marquee-track">
+                <div class="studio-item">Noxcrew</div>
+                <div class="studio-item">The Hive</div>
+                <div class="studio-item">Kubo Studios</div>
+                <div class="studio-item">57Digital</div>
+                <div class="studio-item">Kreatik Studios</div>
+                <div class="studio-item">Team Vaeron</div>
+                <div class="studio-item">Monster Egg Studios</div>
+                <div class="studio-item">XP Games</div>
+                <div class="studio-item">Syclone Studios</div>
+                <div class="studio-item">Oreville Studios</div>
+                <div class="studio-item">DeliSoft Studios</div>
+                <div class="studio-item">Lifeboat</div>
+                <div class="studio-item">Diamond Studios</div>
+                <div class="studio-item">Street Studios</div>
+                <div class="studio-item">Noxcrew</div>
+                <div class="studio-item">The Hive</div>
+                <div class="studio-item">Kubo Studios</div>
+                <div class="studio-item">57Digital</div>
+                <div class="studio-item">Kreatik Studios</div>
+                <div class="studio-item">Team Vaeron</div>
+                <div class="studio-item">Monster Egg Studios</div>
+                <div class="studio-item">XP Games</div>
+                <div class="studio-item">Syclone Studios</div>
+                <div class="studio-item">Oreville Studios</div>
+                <div class="studio-item">DeliSoft Studios</div>
+                <div class="studio-item">Lifeboat</div>
+                <div class="studio-item">Diamond Studios</div>
+                <div class="studio-item">Street Studios</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-centered">
+                <span class="section-tag">// contact</span>
+                <h2 class="section-title">Let's build something</h2>
+                <p class="contact-subtitle">Need a Bedrock addon developer? Reach out.</p>
+                <div class="contact-methods-centered">
+                    <a href="mailto:functionmore@gmail.com" class="contact-card">
+                        <div class="method-icon">@</div>
+                        <div>
+                            <strong>Email</strong>
+                            <p>functionmore@gmail.com</p>
+                        </div>
+                    </a>
+                    <button class="contact-card" id="discord-copy" type="button">
+                        <div class="method-icon">#</div>
+                        <div>
+                            <strong>Discord</strong>
+                            <p><span id="discord-text">functionmore</span><span id="discord-copied" class="copied-badge" style="display:none;">copied</span></p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">function<span class="logo-accent">more</span></span>
+                    <p>shipping addons since 2021</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">home</a>
+                    <a href="#about">about</a>
+                    <a href="#projects">work</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 functionmore. not affiliated with Mojang or Microsoft.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
